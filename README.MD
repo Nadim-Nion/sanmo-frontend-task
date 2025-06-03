@@ -8,7 +8,7 @@ This is a submission for the Front-End Developer position at **SanMo Ltd**. The 
 
 ## 📂 Repository
 
-[GitHub Repository](https://github.com/your-username/sanmo-frontend-task)
+[GitHub Repository](https://github.com/Nadim-Nion/sanmo-frontend-task)
 
 ---
 
