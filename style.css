@@ -64,7 +64,6 @@ button {
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-
 .section1::before {
   content: "";
   position: absolute;
@@ -303,6 +302,7 @@ h4 {
   background-color: #18191b;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 .h4-orbitron {
@@ -338,7 +338,7 @@ p {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  color: #707072;
+  color: #cfcfcf;
   font-size: 20px;
   text-align: center;
   margin-top: 40px;
@@ -352,12 +352,127 @@ p {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  color: #707072;
+  color: #cfcfcf;
   font-size: 20px;
   display: block;
   margin-top: 20px;
   text-align: center;
   line-height: 1.5;
+}
+
+.cardOne-container,
+.cardTwo-container {
+  display: grid;
+  /* grid-template-columns: repeat(3, minmax(300px, 1fr)); */
+  grid-template-columns: 1fr;
+  gap: 20px;
+  position: relative;
+}
+
+.cardTwo-container {
+  margin: 40px 10px 60px 10px;
+}
+
+.card-one,
+.card-two,
+.card-three,
+.card-four,
+.card-five {
+  border: 2px solid #2e2e2f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-one img {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+.card-two img {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+.card-three img {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+/* .card-one img,
+.card-two img,
+.card-three img {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  margin: 0 auto;
+} */
+
+/* .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+h3 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: #cfcfcf;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.class-p {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+  color: #acacac;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.class-span {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #acacac;
+  font-size: 16px;
+  text-align: left;
+}
+
+.concerned-face-img img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+}
+
+.card-four-text-img-container,
+.card-five-text-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container-card-four,
+.text-container-card-five {
+  margin-top: 90px;
 }
 
 /* Small mobile adjustments (max 480px) */
@@ -478,6 +593,17 @@ p {
     font-size: 22px;
     margin-top: 25px;
   }
+  .card-four-text-img-container,
+  .card-five-text-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardOne-container,
+  .cardTwo-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* Tablet styles (768px and up) */
@@ -590,6 +716,12 @@ p {
   .span-text {
     font-size: 22px;
     margin-top: 25px;
+  }
+  .cardOne-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cardTwo-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -715,6 +847,12 @@ p {
     font-size: 24px;
     margin-top: 30px;
   }
+  .cardOne-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cardTwo-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* Extra large screens (1440px and up) */
@@ -826,7 +964,7 @@ p {
   } */
 
   p {
-    font-size: 26px;
+    font-size: 20px;
     margin-top: 70px;
     margin-left: 100px;
     margin-right: 100px;
@@ -834,9 +972,15 @@ p {
   }
 
   .span-text {
-    font-size: 26px;
+    font-size: 20px;
     margin-top: 35px;
     line-height: 1.6;
+  }
+  .cardOne-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cardTwo-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -924,7 +1068,7 @@ p {
   } */
 
   p {
-    font-size: 28px;
+    font-size: 20px;
     margin-top: 80px;
     margin-left: 120px;
     margin-right: 120px;
@@ -932,8 +1076,14 @@ p {
   }
 
   .span-text {
-    font-size: 28px;
+    font-size: 20px;
     margin-top: 40px;
     line-height: 1.7;
+  }
+  .cardOne-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cardTwo-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
