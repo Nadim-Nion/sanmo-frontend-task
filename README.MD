@@ -4,7 +4,7 @@ This is a submission for the Front-End Developer position at **SanMo Ltd**. The 
 
 ## 🔗 Live Link
 
-[View Live Project](https://your-live-site-link.com)
+[View Live Project](https://sanmo-frontend-task.netlify.app/)
 
 ## 📂 Repository
 
