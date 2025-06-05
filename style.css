@@ -290,7 +290,8 @@ h4 {
 }
 
 .section2,
-.section3 {
+.section3,
+.section4 {
   border: 3px solid #2e2e2f;
   margin-top: 30px;
   padding: 20px;
@@ -324,6 +325,10 @@ h4 {
     inset 0 1px 0 rgba(64, 221, 227, 0.1); */
   text-align: center;
   white-space: nowrap;
+}
+
+.h4-margin {
+  margin-bottom: 40px;
 }
 
 /* .h4-orbitron:hover {
@@ -473,6 +478,22 @@ h3 {
 .text-container-card-four,
 .text-container-card-five {
   margin-top: 90px;
+}
+
+.h3-section4 {
+  margin-top: 0;
+}
+
+h6 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: #cfcfcf;
+  font-size: 10px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 /* Small mobile adjustments (max 480px) */
